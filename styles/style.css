@@ -1,0 +1,1012 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/************/
+/* VARIABLES*/
+/************/
+/******/
+/* NAV*/
+/******/
+nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 5rem;
+  width: 50%;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  z-index: 1;
+}
+
+.menu a {
+  font-size: 2.2rem;
+  font-family: "Cabin", sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  *transition: all 0.3s ease-in-out;
+  background-color: #232323;
+}
+
+/*********/
+/* HEADER*/
+/*********/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/asset-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.mainTextContainer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mainText {
+  font-size: 15rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.headerSideSocialMedia {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerSocialMedia li i {
+  color: #FDC800;
+  font-size: 3rem;
+  align-items: center;
+  padding: 15px 50px;
+  text-shadow: 0px 0px 3px #232323, 0px 0px 3px #232323, 0px 0px 3px #232323;
+}
+
+.link, .boxLink, .bioLink {
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #FDC800;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.link, .boxLink {
+  width: 230px;
+}
+
+.link {
+  margin-top: 30px;
+}
+
+.boxLink {
+  margin-top: 40px;
+}
+
+.bioLink {
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 220px;
+}
+
+/***************/
+/*ABOUT SECTION*/
+/***************/
+.aboutUpperContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.aboutLower {
+  background-color: #232323;
+  width: 100%;
+}
+
+.aboutLowerContainer {
+  display: flex;
+  margin: 0px auto;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.logoCombo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  margin: 50px 85px;
+}
+
+.logoCombo i {
+  color: #F8F8F8;
+  font-size: 5rem;
+  padding-bottom: 30px;
+}
+
+/*****************/
+/*GALLERY SECTION*/
+/*****************/
+.gallery {
+  background-color: #F8F8F8;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.photos li {
+  width: 33.3333333333%;
+  height: 100%;
+  padding: 15px;
+}
+
+.photos img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  margin: 80px 0;
+}
+
+/**************************/
+/*TIPS AND REICPES SECTION*/
+/**************************/
+.tipsRecipes {
+  display: flex;
+  width: 100%;
+}
+
+.tipsRecipes img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.tipsRecipes li {
+  width: 50%;
+}
+
+.upperTipsBox, .lowerTipsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.upperTipsBox {
+  margin-left: 42%;
+  margin-right: auto;
+}
+
+.lowerTipsBox {
+  margin-left: auto;
+  margin-right: 42%;
+}
+
+/***********************/
+/*MEET THE COOK SECTION*/
+/***********************/
+.meetCook {
+  background-color: #F8F8F8;
+}
+
+.bioSection {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.headshotContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  padding: 80px 0;
+}
+
+.headshot {
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+}
+
+.headshot img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.cookBio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 70%;
+  height: auto;
+  margin: 50px 0;
+}
+
+/********/
+/*FOOTER*/
+/********/
+footer {
+  background-color: #232323;
+}
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 0;
+}
+
+.formContainer {
+  width: 50%;
+  padding-left: 10px;
+}
+
+.footerContactContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerInfo {
+  padding: 0 10px;
+}
+
+.footerInfo, .formContainer {
+  line-height: 3.5rem;
+}
+
+.footerText, .footerText2, .bottomBar p {
+  color: #F8F8F8;
+}
+
+.inputBox {
+  display: flex;
+  width: 100%;
+  line-height: 4rem;
+  margin-top: 20px;
+}
+
+.footerText2 {
+  line-height: 4rem;
+}
+
+.inputBox input {
+  font-size: 2rem;
+  line-height: 6rem;
+  border: none;
+  flex: 1 4 80%;
+  padding-left: 30px;
+}
+
+.inputBox input::-moz-placeholder {
+  color: #232323;
+  opacity: 1;
+}
+
+.inputBox input:-ms-input-placeholder {
+  color: #232323;
+  opacity: 1;
+}
+
+.inputBox input::placeholder {
+  color: #232323;
+  opacity: 1;
+}
+
+.submit {
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #FDC800;
+  line-height: 4rem;
+  text-align: center;
+  border: none;
+  padding: 0 30px;
+  flex: 1 1 20%;
+  cursor: pointer;
+}
+
+.bottomBar {
+  display: flex;
+  width: 100%;
+  background-color: black;
+}
+
+.bottomBar p {
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.5;
+  padding: 20px 0;
+}
+
+/*NOTE: For some reason @use is acting up on my machine. I spoke with Joe and he advised I stick with @import while he looks into the issue further */
+/****************/
+/*GENERAL STYLES*/
+/****************/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Great Vibes", cursive;
+  font-size: 62.5%;
+  color: #232323;
+}
+
+.wrapper {
+  max-width: 1700px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 4.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+h3, h4 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #F8F8F8;
+  font-size: 2.2rem;
+}
+
+h4 {
+  color: #232323;
+  font-size: 2.8rem;
+  padding-bottom: 40px;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #EAEDF4;
+}
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+@media (max-width: 1350px) {
+  p {
+    font-weight: 400;
+    line-height: 3rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .inputBox input {
+    font-size: 2rem;
+    line-height: 4rem;
+    border: none;
+    flex: 1 4 80%;
+  }
+  .link, .boxLink, .bioLink {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+  .inputBox {
+    margin-top: 10px;
+  }
+  .footerText2 {
+    line-height: 3rem;
+  }
+}
+@media (max-width: 940px) {
+  /*header section*/
+  .headerSideSocialMedia {
+    display: none;
+  }
+  /*general styles*/
+  h3 {
+    font-size: 2.5rem;
+  }
+  /*about section*/
+  .aboutUpperContainer {
+    width: 100%;
+  }
+  .aboutLowerContainer {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .logoCombo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  .logoCombo i {
+    font-size: 8rem;
+    padding-bottom: 10px;
+  }
+  i {
+    color: black;
+  }
+  i:hover, i:focus {
+    cursor: pointer;
+  }
+  /*gallery section*/
+  .gallery .wrapper {
+    width: 100%;
+  }
+  .photos li {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .photos li:nth-child(3) {
+    display: none;
+  }
+  .photos img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    margin: 0;
+  }
+  /*tips and recipes section*/
+  .tipsRecipes {
+    flex-direction: column;
+  }
+  .tipsRecipesBoxes .tipsRecipes:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .tipsRecipes li {
+    width: 100%;
+  }
+  .tipsRecipesBoxes ul:nth-child(1) > li:nth-child(1),
+.tipsRecipesBoxes ul:nth-child(2) > li:nth-child(2) {
+    height: 400px;
+  }
+  .tipsRecipesBoxes ul:nth-child(1) > li:nth-child(2),
+.tipsRecipesBoxes ul:nth-child(2) > li:nth-child(1) {
+    height: 300px;
+  }
+  .upperTipsBox, .lowerTipsBox {
+    padding: 0 100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  /*meet the cook section*/
+  .bioSection {
+    flex-direction: column;
+    margin: 0;
+  }
+  .headshotContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .headshot {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .cookBio {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .cookBio p {
+    text-align: left;
+  }
+  .bioLink {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /*footer*/
+  .footerContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    padding: 35px 0;
+  }
+  .formContainer {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .footerContactContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footerContactContainer .footerInfo:nth-child(3) {
+    display: none;
+  }
+  .footerInfo {
+    padding: 0;
+  }
+  .footerInfo h3 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  .footerText, .footerText2 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .address li {
+    width: 50%;
+  }
+  .address li:nth-child(odd) {
+    text-align: right;
+  }
+  .address li:nth-child(even) {
+    text-align: left;
+  }
+  .address li:nth-child(1) p:after {
+    content: ",";
+  }
+  .address li:nth-child(even) p:before {
+    content: "  ";
+    white-space: pre;
+  }
+  .footerNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .footerNav li:nth-child(n+2) p:before {
+    content: "  |  ";
+    white-space: pre;
+  }
+  .formContainer h3 {
+    margin-bottom: 10px;
+  }
+  .inputBox {
+    flex-direction: column;
+    line-height: 2.5rem;
+    margin-top: 20px;
+  }
+  .inputBox input {
+    line-height: 5rem;
+    width: 100%;
+    margin: 10px auto;
+    padding: 0;
+  }
+  .submit {
+    line-height: 5rem;
+  }
+  .inputBox input::-moz-placeholder {
+    text-align: center;
+  }
+  .inputBox input:-ms-input-placeholder {
+    text-align: center;
+  }
+  .inputBox input::placeholder {
+    text-align: center;
+  }
+  /*hamburger menu*/
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s;
+  }
+  /*nav menu*/
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    resize: none;
+    overflow: auto;
+    background-color: #232323;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu.active {
+    right: 0;
+  }
+  .menu li {
+    padding: 30px;
+  }
+  .menu li a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+    color: #F8F8F8;
+  }
+}
+@media (max-width: 500px) {
+  /*general styles*/
+  h1 {
+    font-size: 4rem;
+  }
+  span {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+    padding-bottom: 40px;
+  }
+  .boxLink {
+    width: 200px;
+  }
+  .mainText {
+    font-size: 10rem;
+  }
+  /*about section*/
+  .upperTipsBox, .lowerTipsBox {
+    padding: 0 50px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .logoCombo i {
+    font-size: 5rem;
+    padding-bottom: 10px;
+  }
+  /*tips and recipes section*/
+  .tipsRecipesBoxes ul:nth-child(1) > li:nth-child(1),
+.tipsRecipesBoxes ul:nth-child(2) > li:nth-child(2) {
+    height: 500px;
+  }
+  /*meet the cook section*/
+  .cookBio {
+    margin-top: 10px;
+  }
+  /*footer section*/
+  .footerText, .footerText2 {
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

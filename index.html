@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Tasty</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+      <nav>
+        <div class="wrapper">
+<!--NAV MENU-->
+          <div class="navContainer">
+            <a href="#" class="logo">Tasty</a>
+                <!--nav menu-->
+                <ul class="menu">
+                  <li><a href="#home" class="menuLink">Home</a></li>
+                  <li><a href="#about" class="menuLink">About</a></li>
+                  <li><a href="#contact" class="menuLink">Contact</a></li>
+                  <li><a href="#blog" class="menuLink"> Blog</a></li>
+                </ul>
+
+                <!--hamburger menu-->
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+        </div>
+      </nav>
+
+      <!--hero header text -->
+      <div class="mainTextContainer">
+        <h1>Welcome to <span class="mainText">Tasty...</span></h1>
+      </div>
+
+      <!--hero header side social media links hidden in mobile view-->
+      <div class="headerSideSocialMedia">
+        <ul class="headerSocialMedia">
+          <li>
+            <a href=#><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <span class="sr-only">
+              <a href="#">Facebook</a>
+            </span>
+          </li>
+          <li>
+            <a href=#><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <span class="sr-only">
+              <a href="#">Instagram</a>
+            </span>
+          </li>
+          <li>
+            <a href=#><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <span class="sr-only">
+              <a href="#">LinkedIn</a>
+            </span>
+          </li>
+          <li>
+            <a href=#><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <span class="sr-only">
+              <a href="#">Twitter</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+  </header>
+  <main>
+  
+  <!--ABOUT SECTION-->
+    <section class="about" id="about">
+      <div class="wrapper">
+
+        <!--upper about section-->
+        <div class="aboutUpperContainer">
+          <h2>About Tasty</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortora elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+            <a href="#" class="link">find out more</a>
+        </div>
+      </div>
+    </section>
+    
+    <!--lower about section-->
+    <section class="aboutLower" id="blog">
+      <div class="wrapper">
+        <div class="aboutLowerContainer">
+          <a href="#">
+            <div class="logoCombo">
+              <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+              <h3>Recipes</h3>
+            </div>  
+          </a>
+           <a href="#">
+            <div class="logoCombo" aria-hidden="true">
+              <i class="fa-sharp fa-solid fa-book-open"></i>
+              <h3>Cooking Tips</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div class="logoCombo" aria-hidden="true">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Contact</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!--PHOTO GALLERY SECTION-->
+    <section class="gallery">
+      <div class="wrapper">
+        <ul class="photos">
+          <li>
+            <img src="./assets/asset-2.jpg" alt="Two slices of lemon with blueberries."> 
+          </li>
+          <li>
+            <img src="./assets/asset-3.jpg" alt="Chicken wings on top of a  leafy green salad in a plate, with a bowl of soup in the background.">
+          </li>
+
+          <!--third li hidden in mobile view -->
+          <li>
+            <img src="./assets/asset-4.jpg" alt="A top-down view of a pot and a bowl, both filled with yellow soup.">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!--TIPS AND RECIPES SECTION-->
+    <section class="tipsRecipesBoxes">
+
+       <!--upper tips boxes // order reveresed in mobile view -->
+        <ul class="tipsRecipes">
+          <li>
+            <div class="upperTipsBox">
+              <h4>cooking tips</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulal pulvinar tortor a  elementum eleifend. Vestibulum consequat vestibulum.</p>
+              <a href="#" class="boxLink">read more</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/asset-5.jpg" alt="An Samsung tablet placed beside a kitchen knife and an assortmet of sliced kiwis, lemons and other miscellaneous fruit.">
+          </li>
+        </ul>
+
+         <!--lower tips boxes // order reveresed in mobile view -->
+        <ul class="tipsRecipes">
+          <li>
+            <img src="./assets/asset-6.jpg" alt="An Apple iPad positioned next to containers filled with toothpicks and large wooden culinary spoons.">
+          </li>
+          <li>
+            <div class="lowerTipsBox">
+              <h4>popular Recipes</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum.</p>
+              <a href="#" class="boxLink">read more</a>
+            </div>
+          </li>
+        </ul>
+    </section>
+
+<!--MEET THE COOK SECTION -->
+    <section class="meetCook">
+      <div class="wrapper">
+        <div class="bioSection">
+
+          <!--headshot container-->
+          <div class="headshotContainer">
+            <div class="headshot">
+              <img src="./assets/asset-7.jpg" alt="A headshot of the business owner surrounding by a border of sliced lemons.">
+            </div>
+          </div>
+
+          <!--cook bio text container-->
+          <div class="cookBio">
+            <h2>Meet the Cook</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsutmdolor sit amet, consectetur adipiscing elit. Nulla puvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortornulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus.</p>
+            <a href="#" class="bioLink">find out more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--FOOTER-->
+  <footer id="contact">
+    <div class="wrapper">
+      <div class="footerContainer">
+        <div class="footerContactContainer">
+
+          <!--address information-->
+          <div class="footerInfo">
+            <h3>contact</h3>
+              <ul class="address">
+                <li><p class="footerText">info@email.com</p></li>
+                <li><p class="footerText">123-456-7890</p></li>
+                <li><p class="footerText">123 some road.</p></li>
+                <li><p class="footerText">Toronto, ON</p></li>
+              </ul>
+          </div>
+
+          <!--footer nav-->
+          <div class="footerInfo">
+            <h3>pages</h3>
+              <ul class="footerNav">
+                <li><a href="#"><p class="footerText">HOME</p></a></li>
+                <li><a href="#"><p class="footerText">ABOUT</p></a></li>
+                <li><a href="#"><p class="footerText">BLOG</p></a></li>
+                <li><a href="#"><p class="footerText">CONTACT</p></a></li>
+              </ul>
+          </div>
+
+          <!--list of recipes in footer-->
+          <div class="footerInfo">
+            <h3>recent posts</h3>
+            <a href="#"><p class="footerText">Lemon Pound Cake</p></a>
+            <a href="#"><p class="footerText">Spaghetti Squash</p></a>
+            <a href="#"><p class="footerText">Sugar Free</p></a>
+            <a href="#"><p class="footerText">Lemonade</p></a>
+          </div>
+        </div>
+
+        <!--subscription form-->
+        <div class="formContainer">
+          <h3>STAY UPDATED</h3>
+          <label for="email" ><p class="footerText2">Subscribe to our newsletter to stay updated</p></label>
+          <div class="inputBox">
+            <input type="email" id="email" name="email" placeholder="email address" required>
+            <button type="submit" class="submit">subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomBar"><p>Copyright © 2018 HackerYou</p></div>
+  </footer>
+
+
+<!--JAVASCRIPT-->
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/2d0137e58f.js" crossorigin="anonymous"></script>
+</body>
+</html>

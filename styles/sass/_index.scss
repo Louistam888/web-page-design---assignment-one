@@ -1,0 +1,243 @@
+
+/*********/
+/* HEADER*/
+/*********/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/asset-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.mainTextContainer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mainText {
+  font-size: 15rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.headerSideSocialMedia {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerSocialMedia li i {
+  color: $accentColor;
+  font-size: 3rem;
+  align-items: center;
+  padding: 15px 50px;
+  text-shadow: 0px 0px 3px $blackShade, 0px 0px 3px $blackShade, 0px 0px 3px $blackShade;
+}
+
+.link, .boxLink, .bioLink {
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $accentColor;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.link, .boxLink {
+  width: 230px;
+}
+
+.link {
+  margin-top: 30px;
+}
+
+.boxLink {
+  margin-top: 40px;
+}
+
+.bioLink {
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 220px;
+}
+
+
+/***************/
+/*ABOUT SECTION*/
+/***************/
+
+.aboutUpperContainer {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  width: 60%;
+  margin: 0 auto; 
+  padding: 80px 0; 
+}
+
+.aboutLower {
+  background-color: $blackShade;
+  width: 100%;
+}
+
+.aboutLowerContainer {
+  display: flex; 
+  margin: 0px auto; 
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.logoCombo {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 15px 0;
+  margin: 50px 85px; 
+}
+
+.logoCombo i {
+  color: $whiteShade;
+  font-size: 5rem;
+  padding-bottom: 30px; 
+}
+
+/*****************/
+/*GALLERY SECTION*/
+/*****************/
+
+
+.gallery {
+  background-color: $whiteShade;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.photos li {
+  width: calc(100%/3);
+  height: 100%;
+  padding: 15px;
+}
+
+.photos img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  margin: 80px 0; 
+}
+
+
+/**************************/
+/*TIPS AND REICPES SECTION*/
+/**************************/
+
+.tipsRecipes {
+  display: flex; 
+  width: 100%; 
+}
+
+.tipsRecipes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+
+.tipsRecipes li {
+  width: 50%;  
+}
+
+.upperTipsBox, .lowerTipsBox {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.upperTipsBox {
+  margin-left: 42%;
+  margin-right: auto;
+}
+
+.lowerTipsBox {
+  margin-left: auto;
+  margin-right: 42%;
+}
+
+
+
+/***********************/
+/*MEET THE COOK SECTION*/
+/***********************/
+
+.meetCook {
+  background-color: $whiteShade;
+}
+
+.bioSection {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.headshotContainer {
+  display: flex; 
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  padding: 80px 0;
+}
+
+.headshot {
+  width: 300px;
+  height: 300px; 
+  margin-right: 50px;
+}
+
+.headshot img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.cookBio {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: left;
+  width: 70%; 
+  height: auto; 
+  margin: 50px 0;
+}

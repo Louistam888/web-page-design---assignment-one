@@ -1,0 +1,491 @@
+@import "setup";
+@import "variables";
+@import "nav";
+@import "index";
+@import "footer";
+
+
+/*NOTE: For some reason @use is acting up on my machine. I spoke with Joe and he advised I stick with @import while he looks into the issue further */
+
+/****************/
+/*GENERAL STYLES*/
+/****************/
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: $primaryFont;
+  font-size: 62.5%;
+  color: $blackShade;
+}
+
+.wrapper {
+  max-width: 1700px;
+  width: 85%;
+  margin: 0 auto; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: $secondaryFont;
+  font-size: 4.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem; 
+  padding-bottom: 20px; 
+}
+
+
+h3, h4 {
+ 
+  font-family: $secondaryFont;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+
+h3 {
+  color: $whiteShade;
+  font-size: 2.2rem; 
+}
+
+h4 {
+  color: $blackShade;
+  font-size: 2.8rem;
+  padding-bottom: 40px;
+}
+
+p {
+  font-size: 2rem;
+  font-family: $secondaryFont;
+  font-weight: 400;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+
+
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+
+@media (max-width: 1350px) {
+  p {
+    font-weight: 400;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 2.2rem; 
+    line-height: 3rem;
+  }
+
+  .inputBox input {
+    font-size: 2rem;
+    line-height: 4rem;
+    border: none;
+    flex: 1 4 80%; 
+  }
+
+  .link, .boxLink, .bioLink {
+    font-size: 1.8rem; 
+    padding: 15px; 
+  }
+
+  .inputBox {
+    margin-top: 10px; 
+  }
+
+  .footerText2 {
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 940px) {
+
+  /*header section*/
+
+  .headerSideSocialMedia {
+    display: none; 
+  }
+
+
+  /*general styles*/
+
+  h3 {
+    font-size: 2.5rem; 
+  }
+
+
+  /*about section*/
+
+  .aboutUpperContainer {
+    width: 100%;
+  }
+  
+  .aboutLowerContainer {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  
+  .logoCombo {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px auto;
+  }
+  
+  .logoCombo i {
+    font-size: 8rem;
+    padding-bottom: 10px; 
+  }
+
+  i {
+    color: black;
+  }
+
+  i:hover, i:focus {
+    cursor: pointer;
+  }
+
+
+  /*gallery section*/
+
+  .gallery .wrapper {
+    width: 100%; 
+  }
+
+  .photos li {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .photos li:nth-child(3) {
+    display: none; 
+  }
+  
+  .photos img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0; 
+  }
+  
+
+  /*tips and recipes section*/
+
+  .tipsRecipes {
+    flex-direction: column;
+  }
+
+  .tipsRecipesBoxes .tipsRecipes:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+    
+  .tipsRecipes li {
+    width: 100%;  
+  }
+  
+  .tipsRecipesBoxes ul:nth-child(1) > li:nth-child(1),
+  .tipsRecipesBoxes ul:nth-child(2) > li:nth-child(2) {
+    height: 400px;
+  }
+
+  .tipsRecipesBoxes ul:nth-child(1) > li:nth-child(2),
+  .tipsRecipesBoxes ul:nth-child(2) > li:nth-child(1) {
+    height: 300px;
+  }
+  
+  .upperTipsBox, .lowerTipsBox {
+    padding: 0 100px;
+    margin: 0 auto;
+    width: 100%; 
+  }
+
+  /*meet the cook section*/
+  
+  .bioSection {
+    flex-direction: column; 
+    margin: 0; 
+  }
+
+  .headshotContainer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  
+  .headshot {
+    width: 300px;
+    height: 300px; 
+    margin: 0 auto; 
+  }
+  
+  .cookBio {
+    width: 100%; 
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .cookBio p {
+    text-align: left;
+  }
+   
+  .bioLink {
+    margin-top: 30px; 
+    margin-bottom: 15px; 
+    margin-right: auto;
+    margin-left: auto; 
+  }
+ 
+
+  /*footer*/
+
+  .footerContainer {
+    flex-direction: column-reverse; 
+    justify-content: center;
+    width: 100%;
+    padding: 35px 0; 
+  }
+
+  .formContainer {
+    width: 100%; 
+    padding: 0;
+    text-align: center;
+  }
+
+  .footerContactContainer{
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footerContactContainer .footerInfo:nth-child(3) {
+    display: none;
+  }
+
+  .footerInfo {
+    padding: 0; 
+  }
+
+  .footerInfo h3 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+
+  .footerText, .footerText2 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .address li {
+    width: 50%; 
+  }
+
+  .address li:nth-child(odd) {
+    text-align: right;
+  }
+
+  .address li:nth-child(even) {
+    text-align: left;
+  }
+
+  .address li:nth-child(1) p:after {
+    content: ",";
+  }
+
+  .address li:nth-child(even) p:before {
+    content: "  ";
+    white-space: pre;
+  }
+ 
+  .footerNav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+  }
+
+  .footerNav li:nth-child(n+2) p:before {
+    content: "  |  ";
+    white-space: pre;
+  }
+
+  .formContainer h3 {
+    margin-bottom: 10px;
+  }
+
+  .inputBox {
+    flex-direction: column;
+    line-height: 2.5rem;
+    margin-top: 20px;
+  }
+
+  .inputBox input {
+    line-height: 5rem;
+    width: 100%;
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  .submit {
+    line-height: 5rem;
+  }
+
+  .inputBox input::placeholder {
+   text-align: center;
+  }
+
+
+  /*hamburger menu*/
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s
+  }
+
+
+  /*nav menu*/
+
+  .menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: -100%;
+      top: 90px;
+      width: 100%;
+      text-align: center; 
+      transition: 0.3s; 
+      justify-content: center;
+      height: calc(100vh - 90px);
+      resize: none;
+      overflow: auto;
+      background-color:$blackShade;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .menu.active {
+      right: 0;
+  }
+
+  .menu li {
+      padding: 30px;  
+  }
+
+  .menu li a {
+      margin: 0;
+      padding: 0;
+      color: black;
+      font-size: 5rem;
+      text-align: center; 
+      color: $whiteShade; 
+  }
+}
+
+@media (max-width: 500px) {
+
+  /*general styles*/
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  span {
+    font-size: 9rem;
+  }
+
+  h2 {
+    font-size: 3.5rem; 
+  }
+  
+  p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  h4 {
+  
+    font-size: 2.2rem;
+    padding-bottom: 40px;
+  }
+
+  .boxLink {
+    width: 200px;
+  }
+
+  .mainText {
+    font-size: 10rem;
+  }
+
+  /*about section*/
+
+  .upperTipsBox, .lowerTipsBox {
+    padding: 0 50px;
+    margin: 0 auto;
+    width: 100%; 
+  }
+
+  .logoCombo i {
+    font-size: 5rem;
+    padding-bottom: 10px; 
+  }
+
+
+  /*tips and recipes section*/
+  .tipsRecipesBoxes ul:nth-child(1) > li:nth-child(1),
+  .tipsRecipesBoxes ul:nth-child(2) > li:nth-child(2) {
+    height: 500px;
+  }
+
+
+  /*meet the cook section*/
+  .cookBio {
+    margin-top: 10px;
+  }
+
+
+  /*footer section*/
+
+  .footerText, .footerText2 {
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+}
